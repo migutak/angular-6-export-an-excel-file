@@ -13,7 +13,7 @@ export class AppComponent {
   }
 
   generateExcel() {
-    this.excelService.generateExcel();
+    this.excelService.generateExcel2();
   }
 
 }

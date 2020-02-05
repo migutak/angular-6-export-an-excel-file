@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { DatePipe } from '../../node_modules/@angular/common';
@@ -9,7 +11,9 @@ import { DatePipe } from '../../node_modules/@angular/common';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [DatePipe],
   bootstrap: [AppComponent]
